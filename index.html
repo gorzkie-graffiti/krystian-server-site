@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Krystain — Modowany Minecraft 1.20.1</title>
+  <meta name="description" content="Krystain — niewielki modowany serwer Minecraft Java 1.20.1 Forge 47.4.10. Create, BrickCraft i wspólne granie.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#111111">
+  <link rel="canonical" href="https://YOUR-DOMAIN.example/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Krystain — Modowany Minecraft 1.20.1">
+  <meta property="og:description" content="Minecraft Java 1.20.1 + Forge 47.4.10 + Create. Dołącz do serwera.">
+  <meta property="og:url" content="https://YOUR-DOMAIN.example/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Krystain Minecraft Server",
+    "url": "https://YOUR-DOMAIN.example/",
+    "description": "Modowany serwer Minecraft Java 1.20.1 Forge 47.4.10.",
+    "about": {
+      "@type": "VideoGame",
+      "name": "Minecraft",
+      "gamePlatform": "PC"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="nav wrap">
+    <a class="brand" href="#top" aria-label="Krystain">KRYSTAIN<span>.</span></a>
+    <a class="nav-link" data-discord href="#">DISCORD ↗</a>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="eyebrow">MINECRAFT JAVA • FORGE 47.4.10</div>
+      <h1>zwykły minecraft,<br><span>tylko trochę bardziej modowany.</span></h1>
+      <p class="lead">Niewielki serwer dla ludzi, którzy chcą pograć, budować, odpalać automatyzację z Create i po prostu zrobić coś głupiego w modowanym świecie.</p>
+
+      <div class="server-card">
+        <div>
+          <div class="label">ADRES SERWERA</div>
+          <code id="server-address">krystain.falix.gg</code>
+        </div>
+        <button id="copy-ip" class="copy-btn" type="button">KOPIUJ IP</button>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-primary" data-discord href="#">DOŁĄCZ NA DISCORD →</a>
+        <a class="btn btn-ghost" href="#info">ZOBACZ INFORMACJE</a>
+      </div>
+    </section>
+
+    <section id="info" class="section wrap">
+      <div class="section-head">
+        <div class="eyebrow">01 / INFORMACJE</div>
+        <h2>bez dwudziestu stron instrukcji.</h2>
+      </div>
+      <div class="grid four">
+        <article class="info-card"><span>WERSJA</span><strong>1.20.1</strong><p>Java Edition</p></article>
+        <article class="info-card"><span>LOADER</span><strong>Forge</strong><p>47.4.10</p></article>
+        <article class="info-card"><span>MODY</span><strong>Create</strong><p>plus reszta modpacka</p></article>
+        <article class="info-card"><span>PACK</span><strong>BrickCraft</strong><p>resource pack</p></article>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="wrap split">
+        <div>
+          <div class="eyebrow">02 / JAK DOŁĄCZYĆ</div>
+          <h2>forge. paczka. brickcraft. hop.</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><b>01</b><span>Zainstaluj Minecraft Java 1.20.1.</span></div>
+          <div class="step"><b>02</b><span>Zainstaluj Forge 47.4.10.</span></div>
+          <div class="step"><b>03</b><span>Pobierz wymagany modpack z Discorda.</span></div>
+          <div class="step"><b>04</b><span>Pobierz resource pack BrickCraft.</span></div>
+          <div class="step"><b>05</b><span>Połącz się z <code>krystain.falix.gg</code>.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="section-head">
+        <div class="eyebrow">03 / CO TU JEST</div>
+        <h2>create i cała reszta chaosu.</h2>
+      </div>
+      <div class="feature-list">
+        <div class="feature"><strong>CREATE</strong><span>Maszyny, automatyzacja, transport i zdecydowanie za dużo redstone'u w przebraniu.</span></div>
+        <div class="feature"><strong>MODPACK</strong><span>Wymagana paczka jest trzymana w jednym miejscu na Discordzie, żeby każdy miał ten sam zestaw.</span></div>
+        <div class="feature"><strong>WSPÓLNE PROJEKTY</strong><span>Budowy, farmy i większe projekty można ogarniać wspólnie z innymi graczami.</span></div>
+      </div>
+    </section>
+
+    <section class="section cta wrap">
+      <div class="cta-box">
+        <div>
+          <div class="eyebrow">04 / DOŁĄCZ</div>
+          <h2>masz minecrafta? to już połowa roboty.</h2>
+          <p>Instrukcje, pliki, modpack, BrickCraft i pomoc przy problemach są na Discordzie.</p>
+        </div>
+        <a class="btn btn-primary" data-discord href="#">WBIJ NA DISCORDA →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span>KRYSTAIN • MODDED MINECRAFT 1.20.1</span>
+    <span>krystain.falix.gg</span>
+  </footer>
+
+  <script>
+    const DISCORD_URL = 'YOUR_DISCORD_INVITE';
+    const ip = 'krystain.falix.gg';
+
+    document.querySelectorAll('[data-discord]').forEach((el) => {
+      el.href = DISCORD_URL;
+    });
+
+    document.getElementById('copy-ip').addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(ip);
+        const btn = document.getElementById('copy-ip');
+        btn.textContent = 'SKOPIOWANE ✓';
+        setTimeout(() => btn.textContent = 'KOPIUJ IP', 1500);
+      } catch {
+        window.prompt('Skopiuj adres serwera:', ip);
+      }
+    });
+  </script>
+</body>
+</html>
