@@ -338,7 +338,13 @@ h2{
   font-family:ui-monospace,SFMono-Regular,Menlo,monospace
 }
 
-.lang-en,.lang-pl,.block-en,.block-pl{display:none}
+/* Language visibility. The hide rule needs `body[data-lang]` so it outweighs
+   component rules like `.link-card span{display:block}` that would otherwise
+   keep the inactive language visible. Keep the hide rule BEFORE the show rules. */
+body[data-lang] .lang-en,
+body[data-lang] .lang-pl,
+body[data-lang] .block-en,
+body[data-lang] .block-pl{display:none}
 
 body[data-lang="en"] .lang-en,
 body[data-lang="en"] .block-en{display:inline}
