@@ -338,14 +338,13 @@ h2{
   font-family:ui-monospace,SFMono-Regular,Menlo,monospace
 }
 
-.lang-pl{display:none}
+.lang-en,.lang-pl,.block-en,.block-pl{display:none}
 
-body[data-lang="en"] .lang-en{display:inline}
-body[data-lang="pl"] .lang-pl{display:inline}
-body[data-lang="en"] .block-en{display:block}
-body[data-lang="pl"] .block-pl{display:block}
+body[data-lang="en"] .lang-en,
+body[data-lang="en"] .block-en{display:inline}
 
-.block-en,.block-pl{display:none}
+body[data-lang="pl"] .lang-pl,
+body[data-lang="pl"] .block-pl{display:inline}
 
 .footer{
   min-height:80px;
