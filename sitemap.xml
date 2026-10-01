@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://krystian-mc.vercel.app/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://krystian-mc.vercel.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://krystian-mc.vercel.app/server/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://krystian-mc.vercel.app/join/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://krystian-mc.vercel.app/mods/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://krystian-mc.vercel.app/announcements/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://krystian-mc.vercel.app/troubleshooting/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://krystian-mc.vercel.app/projects/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://krystian-mc.vercel.app/rules/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

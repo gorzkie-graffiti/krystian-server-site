@@ -1,138 +1,19 @@
-<!doctype html>
-<html lang="pl">
-<head>
-  <link rel="canonical" href="https://krystian-mc.vercel.app/">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Krystain — Modowany Minecraft 1.20.1</title>
-  <meta name="description" content="Krystain — niewielki modowany serwer Minecraft Java 1.20.1 Forge 47.4.10. Create, BrickCraft i wspólne granie.">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#111111">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Krystain — Modowany Minecraft 1.20.1">
-  <meta property="og:description" content="Minecraft Java 1.20.1 + Forge 47.4.10 + Create. Dołącz do serwera.">
-  <meta property="og:url" content="https://krystian-mc.vercel.app/">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Krystain Minecraft Server",
-    "url": "https://krystian-mc.vercel.app/",
-    "description": "Modowany serwer Minecraft Java 1.20.1 Forge 47.4.10.",
-    "about": {
-      "@type": "VideoGame",
-      "name": "Minecraft",
-      "gamePlatform": "PC"
-    }
-  }
-  </script>
-</head>
-<body>
-  <header class="nav wrap">
-    <a class="brand" href="#top" aria-label="Krystain">KRYSTAIN<span>.</span></a>
-    <a class="nav-link" data-discord href="#">DISCORD ↗</a>
-  </header>
-
-  <main id="top">
-    <section class="hero wrap">
-      <div class="eyebrow">MINECRAFT JAVA • FORGE 47.4.10</div>
-      <h1>zwykły minecraft,<br><span>tylko trochę bardziej modowany.</span></h1>
-      <p class="lead">Niewielki serwer dla ludzi, którzy chcą pograć, budować, odpalać automatyzację z Create i po prostu zrobić coś głupiego w modowanym świecie.</p>
-
-      <div class="server-card">
-        <div>
-          <div class="label">ADRES SERWERA</div>
-          <code id="server-address">krystian.seedloaf.gg</code>
-        </div>
-        <button id="copy-ip" class="copy-btn" type="button">KOPIUJ IP</button>
-      </div>
-
-      <div class="actions">
-        <a class="btn btn-primary" data-discord href="#">DOŁĄCZ NA DISCORD →</a>
-        <a class="btn btn-ghost" href="#info">ZOBACZ INFORMACJE</a>
-      </div>
-    </section>
-
-    <section id="info" class="section wrap">
-      <div class="section-head">
-        <div class="eyebrow">01 / INFORMACJE</div>
-        <h2>bez dwudziestu stron instrukcji.</h2>
-      </div>
-      <div class="grid four">
-        <article class="info-card"><span>WERSJA</span><strong>1.20.1</strong><p>Java Edition</p></article>
-        <article class="info-card"><span>LOADER</span><strong>Forge</strong><p>47.4.10</p></article>
-        <article class="info-card"><span>MODY</span><strong>Create</strong><p>plus reszta modpacka</p></article>
-        <article class="info-card"><span>PACK</span><strong>BrickCraft</strong><p>resource pack</p></article>
-      </div>
-    </section>
-
-    <section class="section dark">
-      <div class="wrap split">
-        <div>
-          <div class="eyebrow">02 / JAK DOŁĄCZYĆ</div>
-          <h2>forge. paczka. brickcraft. hop.</h2>
-        </div>
-        <div class="steps">
-          <div class="step"><b>01</b><span>Zainstaluj Minecraft Java 1.20.1.</span></div>
-          <div class="step"><b>02</b><span>Zainstaluj Forge 47.4.10.</span></div>
-          <div class="step"><b>03</b><span>Pobierz wymagany modpack z Discorda.</span></div>
-          <div class="step"><b>04</b><span>Pobierz resource pack BrickCraft.</span></div>
-          <div class="step"><b>05</b><span>Połącz się z <code>krystian.seedloaf.gg</code>.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section wrap">
-      <div class="section-head">
-        <div class="eyebrow">03 / CO TU JEST</div>
-        <h2>create i cała reszta chaosu.</h2>
-      </div>
-      <div class="feature-list">
-        <div class="feature"><strong>CREATE</strong><span>Maszyny, automatyzacja, transport i zdecydowanie za dużo redstone'u w przebraniu.</span></div>
-        <div class="feature"><strong>MODPACK</strong><span>Wymagana paczka jest trzymana w jednym miejscu na Discordzie, żeby każdy miał ten sam zestaw.</span></div>
-        <div class="feature"><strong>WSPÓLNE PROJEKTY</strong><span>Budowy, farmy i większe projekty można ogarniać wspólnie z innymi graczami.</span></div>
-      </div>
-    </section>
-
-    <section class="section cta wrap">
-      <div class="cta-box">
-        <div>
-          <div class="eyebrow">04 / DOŁĄCZ</div>
-          <h2>masz minecrafta? to już połowa roboty.</h2>
-          <p>Instrukcje, pliki, modpack, BrickCraft i pomoc przy problemach są na Discordzie.</p>
-        </div>
-        <a class="btn btn-primary" data-discord href="#">WBIJ NA DISCORDA →</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer wrap">
-    <span>KRYSTAIN • MODDED MINECRAFT 1.20.1</span>
-    <span>krystian.seedloaf.gg</span>
-  </footer>
-
-  <script>
-    const DISCORD_URL = 'https://discord.gg/H9PWDrNjB4';
-    const ip = 'krystian.seedloaf.gg';
-
-    document.querySelectorAll('[data-discord]').forEach((el) => {
-      el.href = DISCORD_URL;
-    });
-
-    document.getElementById('copy-ip').addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(ip);
-        const btn = document.getElementById('copy-ip');
-        btn.textContent = 'SKOPIOWANE ✓';
-        setTimeout(() => btn.textContent = 'KOPIUJ IP', 1500);
-      } catch {
-        window.prompt('Skopiuj adres serwera:', ip);
-      }
-    });
-  </script>
-</body>
-</html>
+<!doctype html><html lang="en" data-titleen="Krystain — Modded Minecraft 1.20.1" data-titlepl="Krystain — Modowany Minecraft 1.20.1" data-descen="Krystain is a small modded Minecraft Java 1.20.1 Forge server with Create and BrickCraft." data-descpl="Krystain to mały modowany serwer Minecraft Java 1.20.1 Forge z Create i BrickCraft."><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Krystain — Modded Minecraft 1.20.1</title><meta name="description" content="Krystain is a small modded Minecraft Java 1.20.1 Forge server with Create and BrickCraft."><meta name="robots" content="index, follow"><link rel="canonical" href="https://krystian-mc.vercel.app/"><meta property="og:type" content="website"><meta property="og:title" content="Krystain — Modded Minecraft 1.20.1"><meta property="og:description" content="Krystain is a small modded Minecraft Java 1.20.1 Forge server with Create and BrickCraft."><meta property="og:url" content="https://krystian-mc.vercel.app/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css"></head><body>
+<header class="nav wrap"><a class="brand" href="/">KRYSTAIN<span>.</span></a><div class="nav-actions"><a class="nav-link" href="/server/">SERVER</a><a class="nav-link" href="/join/">JOIN</a><a class="nav-link" href="/mods/">MODS</a><a class="nav-link" href="/announcements/">NEWS</a><a class="nav-link" href="/troubleshooting/">HELP</a><a class="nav-link" href="/projects/">PROJECTS</a><a class="nav-link" data-discord href="#">DISCORD ↗</a><div class="lang-switch"><button data-set-lang="en">EN</button><button data-set-lang="pl">PL</button></div></div></header>
+<main>
+<section class="hero wrap"><div class="eyebrow">MINECRAFT JAVA • FORGE 47.4.10</div><h1><span class="lang-en">ordinary minecraft,<br><span>just a little more modded.</span></span><span class="lang-pl">zwykły minecraft,<br><span>tylko trochę bardziej modowany.</span></span></h1>
+<p class="lead"><span class="lang-en">A small modded server for building, Create automation, questionable engineering and block-game chaos.</span><span class="lang-pl">Mały modowany serwer do budowania, automatyzacji z Create, podejrzanej inżynierii i blockowego chaosu.</span></p>
+<div class="server-card"><div><div class="label">SERVER ADDRESS</div><code>krystian.seedloaf.gg</code></div><button id="copy-ip" class="copy-btn">COPY IP</button></div>
+<div class="actions"><a class="btn" href="/join/">HOW TO JOIN →</a><a class="btn btn-ghost" href="/server/">SERVER INFO</a><a class="btn btn-ghost" data-discord href="#">DISCORD</a></div>
+<div class="notice" style="margin-top:28px"><strong><span class="lang-en">Usually online:</span><span class="lang-pl">Zwykle online:</span></strong><div class="mini"><code>@r3d_d2h</code> · <code>@gorzkie_graffiti</code> · <code>@Top.gg#8005</code></div><strong style="display:block;margin-top:12px"><span class="lang-en">Usually offline:</span><span class="lang-pl">Zwykle offline:</span></strong><div class="mini"><code>@marczelik</code> · <code>@piter_38099</code></div></div></section>
+<section class="section wrap"><div class="section-head"><div class="eyebrow">PAGES</div><h2><span class="lang-en">actual useful pages.</span><span class="lang-pl">faktycznie przydatne strony.</span></h2></div><div class="link-grid">
+<a class="link-card" href="/server/"><strong>Server</strong><span><span class="lang-en">address, versions and server basics.</span><span class="lang-pl">adres, wersje i podstawowe informacje.</span></span></a>
+<a class="link-card" href="/join/"><strong>How to join</strong><span><span class="lang-en">exact Forge version, mods and setup.</span><span class="lang-pl">dokładna wersja Forge, mody i konfiguracja.</span></span></a>
+<a class="link-card" href="/mods/"><strong>Mods</strong><span><span class="lang-en">required files, optional mods and BrickCraft.</span><span class="lang-pl">wymagane pliki, opcjonalne mody i BrickCraft.</span></span></a>
+<a class="link-card" href="/announcements/"><strong>Announcements</strong><span><span class="lang-en">recent migrations and server updates.</span><span class="lang-pl">ostatnie migracje i aktualizacje.</span></span></a>
+<a class="link-card" href="/troubleshooting/"><strong>Troubleshooting</strong><span><span class="lang-en">checklist before you DM an admin.</span><span class="lang-pl">lista kontrolna przed napisaniem do admina.</span></span></a>
+<a class="link-card" href="/projects/"><strong>Projects</strong><span><span class="lang-en">organize builds with useful coordinates.</span><span class="lang-pl">organizuj budowy z konkretnymi koordynatami.</span></span></a>
+<a class="link-card" href="/rules/"><strong>Rules</strong><span><span class="lang-en">one very simple rule.</span><span class="lang-pl">jedna bardzo prosta zasada.</span></span></a></div></section>
+<section class="section dark"><div class="wrap split"><div><div class="eyebrow">TL;DR</div><h2><span class="lang-en">forge. mods. blocks. don't spawn 30,000 doors.</span><span class="lang-pl">forge. mody. bloczki. nie spawnuj 30 000 drzwi.</span></h2></div><div class="steps">
+<div class="step"><b>01</b><span><span class="lang-en">Minecraft Java 1.20.1 + Forge 47.4.10.</span><span class="lang-pl">Minecraft Java 1.20.1 + Forge 47.4.10.</span></span></div><div class="step"><b>02</b><span><span class="lang-en">Install required mods.</span><span class="lang-pl">Zainstaluj wymagane mody.</span></span></div><div class="step"><b>03</b><span><span class="lang-en">Install BrickCraft.</span><span class="lang-pl">Zainstaluj BrickCraft.</span></span></div><div class="step"><b>04</b><span><span class="lang-en">Join krystian.seedloaf.gg.</span><span class="lang-pl">Wejdź na krystian.seedloaf.gg.</span></span></div>
+</div></div></section></main><footer class="footer wrap"><span>KRYSTAIN • MODDED MINECRAFT 1.20.1</span><span>krystian.seedloaf.gg</span></footer><script src="/site.js"></script></body></html>
