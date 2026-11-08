@@ -1,4 +1,4 @@
-# Krystain Minecraft Server — static landing page
+# Krystian Minecraft Server — static landing page
 
 Lekka strona HTML/CSS/JS bez frameworka. Nadaje się do GitHub Pages, GitLab Pages, Cloudflare Pages, Vercel, Netlify, Render, Firebase Hosting, Surge i zwykłego Nginxa/Caddy na VM.
 

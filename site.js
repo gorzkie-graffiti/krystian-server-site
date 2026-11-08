@@ -10,11 +10,11 @@ function setLang(lang){
   const md=document.documentElement.dataset["desc"+lang];
   if(d&&md)d.content=md;
 }
-const stored=(()=>{try{return localStorage.getItem("krystain-lang")}catch{return null}})();
+const stored=(()=>{try{return localStorage.getItem("krystian-lang")}catch{return null}})();
 const detected=stored||((navigator.language||"en").toLowerCase().startsWith("pl")?"pl":"en");
 setLang(detected);
 document.querySelectorAll("[data-set-lang]").forEach(b=>b.addEventListener("click",()=>{
-  try{localStorage.setItem("krystain-lang",b.dataset.setLang)}catch{}
+  try{localStorage.setItem("krystian-lang",b.dataset.setLang)}catch{}
   setLang(b.dataset.setLang);
 }));
 document.querySelectorAll(".copy-btn, [data-copy]").forEach(btn=>{
