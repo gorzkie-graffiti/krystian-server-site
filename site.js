@@ -19,7 +19,7 @@ document.querySelectorAll("[data-set-lang]").forEach(b=>b.addEventListener("clic
 }));
 document.querySelectorAll(".copy-btn, [data-copy]").forEach(btn=>{
   btn.addEventListener("click",async()=>{
-    const text=btn.dataset.copy||btn.getAttribute("data-copy")||"gg.evade.in:25567";
+    const text=btn.dataset.copy||btn.getAttribute("data-copy")||"PLACEHOLDER IP";
     const originalText=btn.textContent;
     try{
       await navigator.clipboard.writeText(text);
